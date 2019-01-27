@@ -259,17 +259,17 @@ button.primary.tab:focus{
         padding: 5px;
         padding-left: 45px;
     }
-    video{
+    iframe{
         width: 100%;
         height: 60%;
     }
 }
 
-video{
+iframe{
     width: 60%;
     height: 45%;
 }
-video.fullscreen{
+iframe.fullscreen{
     width: 100%;
     height: 100%;
 }
