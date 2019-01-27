@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<head>
+    <title>Python Math Function</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="mars.css" type="text/css" rel="stylesheet"/>
+    <script src="answersheet.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="showone()">
+    <div class="topnav">
+        <button class="tab primary left">RACE</button>
+        <button class="tab primary right">Item 1</button>
+        <button class="tab primary right">Item 2</button>
+        <button class="tab primary right">Item 3</button>
+        <button class="tab primary right active">Item 4</button>
+        <button class="tab primary right">Item 5</button>
+    </div>
+    <br><br><br><br>
+    <div class="row">
+        <video class="fullscreen" controls>
+            <source src="https://r1---sn-bvvbax-cage.googlevideo.com/videoplayback?source=youtube&signature=3065F37863B5659E0EEB79EA8E1BA46FDC2FC78D.7EBC66621EE32659AFC1587E425260F5FD0CD94A&ratebypass=yes&clen=19712305&fvip=1&ipbits=0&gir=yes&lmt=1541092085914906&ip=118.185.203.98&sparams=clen,dur,ei,expire,gir,id,ip,ipbits,ipbypass,itag,lmt,mime,mip,mm,mn,ms,mv,nh,pl,ratebypass,requiressl,source&pl=24&requiressl=yes&mime=video%2Fmp4&id=o-ALtEomTa3bbkWLzBFEKDhMVsGN6cTEA0P_JaVnbgdMwi&dur=458.942&c=WEB&txp=5431432&expire=1548462109&itag=18&ei=vVNLXMnmI9TLz7sPjv2q4A8&key=cms1&beids=23786172&redirect_counter=1&rm=sn-h55ez7e&fexp=23786172&req_id=7b292f0fa0b8a3ee&cms_redirect=yes&ipbypass=yes&mip=203.90.116.226&mm=31&mn=sn-bvvbax-cage&ms=au&mt=1548440419&mv=m&nh=EAY">
+        </video>
+    </div>
+    <div class="large12" style="width:90%; margin: auto;">
+            <h2>Introduction</h2>
+
+            Welcome to this session of Python 3.7 fundamentals course! In this session we are going to cover the math module and its functions in python.
+            Using math module allows us to use some popular maths functions like trigonometry, logarithms, factorial, etc. 
+            Before we start keep in mind that math module can not be used for complex numbers and cmath module must be used instead.
+            Make sure your previous basics are clear before beginning this session!
+            
+            <h2>Using Math Module</h2> 
+            Like most python modules, math module is not available by default for our usage and hence has to be specifically imported by using the import keyword. This allows python to load or invoke the math module and its functions.
+            After we are done importing math module, the syntax for calling a function available with math module is given by : 
+            math.function_name()
+            While the syntax for using a constant available with math module is given by : math.constant_name
+            Here, parenthesis () is used to refer to function and may contain parameters to be accepted to be used. Parameters are values inputted by the user for the function to work. All functions in math module require parameters to work.
+            Constants don’t use parenthesis () and are just reserved values, for example : value of pi  or euler’s number.
+            Invoking math module using import keyword :
+            
+            <pre>
+            >>> import math 
+            </pre>
+            
+            Using an alias instead of the module name (here, ‘math’) can make function calling easier. Example :
+            
+            <pre>
+            >>> import math as m
+            </pre>
+            
+            By using an alias the syntax for calling functions and constants in math module are replaced by ‘m’ instead of ‘math’. Example :
+            m.function_name()
+            m.constant
+                Hence this can reduce the need to type long module names again and again.
+            
+            
+            <h2>Constants In Math Module</h2> 
+            Constants as mentioned before reserved values that will always remain the same as they are mathematical figures. Some of the constants that math module provides is : 
+            Pie
+            Pie (π) is a well-known mathematical constant, which is defined as the ratio of the circumference to the diameter of a circle and its value is 3.141592653589793. Pie is called using “pi” in python.
+            
+            <pre>
+            >>> import math
+            >>> p = math.pi
+            >>> print (“Value of pie is : “,p) 
+            >>> print (“Value of pie is : “,math.pi)
+            </pre>
+            
+            Euler’s Number
+            Another well-known mathematical constant defined in the math module is e. It is called Euler's number and it is a base of the natural logarithm. Its value is 2.718281828459045. Example :
+            
+            <pre>
+            >>> print (“Value of e is : “,math.e)
+            </pre>
+            
+            
+            
+            <h2>Functions Of Math Module</h2>
+            Trigonometric Functions
+            
+            math.radians(x) :
+            radians() converts degree values to radians. Hence 90 degrees will be converted to π/2 or 1.5707963267948966. Example :
+            
+            <pre>
+            >>> math.radians(90)
+            1.5707963267948966
+            </pre>
+            
+            Note : The value entered (i.e, the parameter or ‘x’ here) is considered to be a degree value by python.
+            
+            math.degrees(x)
+            degrees() converts radians to degree value which is most widely used. Example :
+            
+            <pre>
+            >>> math.degrees(60)
+            3437.746770784939
+            </pre>
+            
+            In above example, the value ‘60’ is considered to be radian by python hence we get such an obnoxious value for it.
+            
+            <pre>
+            >>> math.degrees(math.radians(90))
+            90.0
+            </pre>
+            
+            Here, radians(90) converts 90 degrees to radians which is converted again into degrees by degrees() function, hence the end value is 90 degrees only.
+            
+            
+            math.sin(x)
+            sin() function accepts a radian value and returns it’s sine value. Example :
+            
+            <pre>
+            >>> math.sin(90)
+            0.8939966636005579
+            >>> math.sin(math.radians(90))
+            1.0
+            </pre>
+            
+            In above example, sin(90) returns value for 90 radians but using math.sin(math.radians(90)) first converts 90 degrees into radians value and then gives us value for sine of 90 degrees which we know is 1.
+            
+            math.cos(x)
+            cos() function accepts a radian value and returns it’s cosine value.
+            Example :
+            
+            <pre>
+            >>> math.cos(90)
+            -0.4480736161291701
+            </pre>
+            
+            math.tan(x)
+            tan() function accepts a radian value and returns it’s tangent value.
+            Example :
+            
+            <pre>
+            >>> math.tan(45)
+            1.6197751905438615
+            </pre>
+            
+            
+            
+            
+            
+            
+            <h2>Logarithmic Functions</h2> 
+            math.log(x)
+            The math.log() method returns the natural logarithm of a given number. The natural logarithm is calculated to the base e. 
+            
+            <pre>
+            >>> math.log(10)
+            2.302585092994046
+            </pre>
+            
+            math.log10(x)
+            The math.log10() method returns the base-10 logarithm of the given number. It is called the standard logarithm.
+            
+            <pre>
+            >>>math.log10(10)
+            1.0 
+            </pre>
+            
+            
+            <h2>Other functions of math module</h2>
+                
+            math.pow(x,y)
+            The math.pow() method receives two arguments/values, raises the first to the second and returns the result. In other words, pow(4,4) is equivalent to 4**4 or 44   
+            Example :
+            
+            <pre>
+            >>>math.pow(2,4)
+            16.0
+            >>>2**4
+            16 
+            </pre>
+            
+            
+            
+            
+            math.sqrt(x)
+            The math.sqrt() method returns the square root of a given number.
+            Example:
+            
+            <pre>
+            >>>math.sqrt(100)
+            10.0
+            >>>math.sqrt(3)
+            1.7320508075688772 
+            </pre>
+            
+            math.ceil(x) and math.floor(x)
+            The following two functions are called representation functions. The ceil() function approximates the given number to the smallest integer, greater than or equal to the given floating point number. The floor() function returns the largest integer less than or equal to the given number. 
+            Hence, while using math.ceil(4.7) or even math.ceil(4.2) the returned value will be the higher next float number  which is 5.0
+            And while using math.floor(4.7) or math.floor(4.2) both will return the nearest lower value which is 4.0
+            Example :
+            
+            <pre>
+            >>>math.ceil(4.5867)
+            5
+            >>>math.floor(4.5687)
+            4 
+            </pre>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            math.fabs(x)
+            fabs() returns the absolute or modulus float value of any number irrespective of its sign. If a value is -ve it will return +ve value and if it’s a +ve number it will remain the same.
+            Example:
+            
+            <pre>
+            >>> math.fabs(-4)
+            4.0
+            >>> math.fabs(4)
+            4.0
+            </pre>
+                    
+                        
+    </div>
+    <div class="large12" style="width:90%; margin:auto;">
+        <h2>Test What You Have Learnt : </h2>
+        <button class="alert large center" onclick="quiz()" style="padding-left:30px; padding-right:30px; ">Take A Quiz</button>
+    </div>
+    <script>
+        function quiz(){
+            window.open("quizdemo.html", "quizwindow", "width=800,height=600");
+        }
+    </script>
+</body>

@@ -1,0 +1,146 @@
+<html>
+<head>
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="mars.css" type="text/css" rel="stylesheet"/>
+    <script src="answersheet.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="showone()">
+
+<div class="col large8 quiz left">
+        <h1>Questions Related To The Topic : </h1>
+        <div id="one">
+                <h3>Q1. What value does sin() function accepts?</h3>
+                <div class="check">
+                        <input type="radio" name="qone" value="Radians" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radians
+                </div><br>
+                <div class="check">
+                        <input type="radio" name="qone" value="Scripting" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degrees
+                </div><br>
+                <div class="check">
+                        <input type="radio" name="qone" value="Assembly" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Radians and degrees both
+                </div><br>
+                <div class="check">
+                        <input type="radio" name="qone" value="None" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complex numbers
+                </div><br>
+                <button class="primary small right" onclick="showtwo()">Next</button>
+        </div>
+
+        <div id="two">
+                <h3>Q2. What’s the correct value for math.ceil(4.279)<br>  and math.floor(4.677)?</h3>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qtwo" value="Programming" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 and 4
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qtwo" value="Scripting" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4 and 5
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qtwo" value="5 and 4" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 and 4
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qtwo" value="None" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 and 5
+                </div><br>
+                <button class="primary small left" onclick="showone()">Prev</button>
+                <button class="primary small right" onclick="showthree()">Next</button>
+        </div>
+
+        <div id="three">
+                <h3>Q3. The values of math.fabs(-4.7) and math.fabs(3.41) are : </h3>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qthree" value="Programming" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-4.7 and 3.41
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qthree" value="Scripting" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-4.7 and -3.41
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qthree" value="Assembly" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.7 and -3.41
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qthree" value="4.7 and 3.41" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.7 and 3.41
+                </div><br>
+                <button class="primary small left" onclick="showtwo()">Prev</button>
+                <button class="primary small right" onclick="showfour()">Next</button>
+        </div>
+
+        <div id="four">
+                <h3>Q4. The constant pie (π) can be used using :</h3>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qfour" value="Programming" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;math.pi()
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qfour" value="Scripting" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;math.pie
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qfour" value="math.pi" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;math.pi
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qfour" value="None" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;math.pie()
+                </div><br>
+                <button class="primary small left" onclick="showthree();">Prev</button>
+                <button class="primary small right" onclick="showfive()">Next</button>
+        </div>
+
+        <div id="five">
+                <h3>Q5. math.pow(3,3) is going to return the value :</h3>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qfive" value="-9" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-9
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qfive" value="27" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qfive" value="-27" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-27
+                </div><br>
+                <div class="check">&nbsp;&nbsp;
+                        <input type="radio" name="qfive" value="9" />
+                        <button class="radiomark">X</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+                </div><br>
+                <button class="primary small left" onclick="showfour();">Prev</button>
+                <button class="primary small right" onclick="showsubmit();">Submit</button>
+        </div>
+
+        <div id="submit">
+                <h2>Are You Sure You Want To Submit? You Can't Undo This Step</h2>
+                <div class="row"><button class="alert large" onclick="showfive();">No, Go Back</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="success large" onclick="qone(); qtwo(); qthree(); qfour(); qfive(); result(); showresult(); hidenav();">Yes Submit</button></div>
+        </div>
+
+        <div id="result">
+            <h2>Here Is Your Result : </h2>
+            <h3 id="score"></h3>
+        </div>
+
+    </div>
+    <div class="col large4 quiz right box" id="nav">
+            <h3>Navigation : </h3>
+            <button class="square secondary" onclick="showone();">Q1</button>
+            <button class="square secondary" onclick="showtwo();">Q2</button>
+            <button class="square secondary" onclick="showthree();">Q3</button><br>
+            <button class="square secondary" onclick="showfour();">Q4</button>
+            <button class="square secondary" onclick="showfive();">Q5</button><br>
+            <button class="tab secondary" style="margin:10px;" onclick="showsubmit();">Submit</button>
+            <br><br><br>
+    </div>
+</body>
+</html>
